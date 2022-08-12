@@ -82,7 +82,16 @@ public class UI {
         System.out.println("Turn: " + chessMatch.getTurn());
 
         if(!chessMatch.getCheckMate()){
-            System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+            System.out.print("Waiting player: ");
+            if (chessMatch.getCurrentPlayer() == Color.WHITE){
+                System.out.print(ANSI_WHITE_BACKGROUND + ANSI_BLACK);
+                System.out.println("WHITE");
+                System.out.print(ANSI_RESET);
+            } else {
+                System.out.print(ANSI_YELLOW_BACKGROUND + ANSI_BLACK);
+                System.out.println("BLACK");
+                System.out.print(ANSI_RESET);
+            }
 
             if (chessMatch.getCheck()) {
                 System.out.print(ANSI_RED_BACKGROUND + ANSI_WHITE);
