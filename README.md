@@ -21,10 +21,10 @@ I created this project while learning Java through Nelio Alves's Java Course. Th
 
 ![game](https://github.com/danilo-maia/Assets/blob/main/Chess/Checkmate.png)
 
-# How to install it
+# How to install
 It's highly recommended to play the game from the terminal, as the terminal clear function does not work from IDEs like IntelliJ. After cloning the project with:
 ```bash
-git clone https://github.com/danilo-maia/chess-terminal-game/new/main?readme=1
+git clone https://github.com/danilo-maia/chess-terminal-game/
 ```
 you need to compile the code and then run it
 ```bash
